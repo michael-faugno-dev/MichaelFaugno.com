@@ -3,19 +3,116 @@
   color: white;
   text-align: left;
 
-//   h1 {
-//     font-size: 3em;
-//     margin-bottom: 20px;
-//   }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-align: left;
+  }
 
-//   p {
-//     font-size: 1.2em;
-//     line-height: 1.6;
-//     margin-bottom: 20px;
-//   }
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+  }
 
-//   a {
-//     color: #ffce00;
-//     text-decoration: underline;
-//   }
+  h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px 0;
+    color: white;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+}
+
+.lessons-intro {
+  margin-bottom: 50px;
+  font-size: 1.2em;
+
+  p {
+    max-width: 900px;
+  }
+}
+
+.lessons-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-bottom: 60px;
+
+  .feature {
+    text-align: left;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    svg {
+      color: #5000ca;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.lessons-approach {
+  padding: 40px;
+  background: rgba(80, 0, 202, 0.1);
+  border-left: 4px solid #5000ca;
+  border-radius: 4px;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  p {
+    max-width: 900px;
+    margin-bottom: 20px;
+  }
+
+  .approach-cta {
+    font-size: 1.15em;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .brass-lessons-section {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+
+  .lessons-features {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .lessons-approach {
+    padding: 25px;
+  }
 }

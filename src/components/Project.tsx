@@ -4,6 +4,9 @@ import subject64 from '../assets/images/subject64.png';
 import discord from '../assets/images/discord.png';
 import crossPlatform from '../assets/images/cross-platform.png';
 import NJGSO from '../assets/images/NJGSO.jpg';
+import pantryMonitortop from '../assets/images/pantry-monitor-top.jpg';
+import pantryMonitorbottom from '../assets/images/pantry-monitor-bottom.jpg';
+import siftMatching from '../assets/images/sift1.png';
 
 import '../assets/styles/Project.scss';
 
@@ -13,28 +16,30 @@ function Project() {
         <h1>Projects & Collaborations</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/Faugnom1/epic-seven-armory" target="_blank" rel="noreferrer"><img src={e7Logo} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/Faugnom1/epic-seven-armory" target="_blank" rel="noreferrer"><h2>Epic Seven Armory</h2></a>
-                <p>A companion tool for the popular mobile game Epic Seven. It allows users to upload images of their characters and gear to extract and store key stats. 
-                    Using PyTesseract for optical character recognition (OCR), the app decodes information from screenshots and displays it in a clean, user-friendly interface. 
-                    The frontend is built with React, while Flask serves as the backend, handling data storage with MongoDB. The tool includes features such as real-time updates, 
-                    seamless data fetching, and an intuitive interface for users to configure and showcase their character builds on Twitch as a customizable extension.</p>
+                <a href="https://github.com/michael-faugno-dev/EpicSevenArmory" target="_blank" rel="noreferrer"><img src={e7Logo} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/michael-faugno-dev/EpicSevenArmory" target="_blank" rel="noreferrer"><h2>Epic Seven Armory</h2></a>
+                <p>A cross-platform desktop application built with Electron, React, Flask, and MongoDB to catalog game units with real-time stat tracking. 
+                    Implements secure Google OAuth authentication with JWT-based session management and an OCR/SIFT image-recognition pipeline to parse screenshots and sync structured data into the database.
+                    Includes an integrated Twitch overlay system enabling live unit-selection visibility within streaming environments.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/Faugnom1/Subject64" target="_blank" rel="noreferrer"><img src={subject64} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/Faugnom1/Subject64" target="_blank" rel="noreferrer"><h2>Subject 64</h2></a>
-                <p>Subject 64 is a retro-inspired Gameboy-style game created for the GBJAM game development event. This team project focuses on delivering a nostalgic gaming 
-                    experience with pixel art, simple yet engaging mechanics, and an eerie Halloween theme. Built in Unity with C#, the game includes custom animations, music, 
-                    and art, with controls that replicate the classic Gameboy feel. The gameplay is designed to evoke the charm of old-school games, with spooky environments 
-                    and a challenge to escape from Subject 64.</p>
+            <div className="project-image-hover">
+                <a href="https://github.com/michael-faugno-dev/PantryScanner" target="_blank" rel="noreferrer">
+                    <img src={pantryMonitortop} className="zoom image-default" alt="Pantry Dashboard - Stats" width="100%"/>
+                    <img src={pantryMonitorbottom} className="zoom image-hover" alt="Pantry Dashboard - Inventory" width="100%"/>
+                </a>
+            </div>
+                <a href="https://github.com/michael-faugno-dev/PantryScanner" target="_blank" rel="noreferrer"><h2>AI-Powered Pantry Monitor</h2></a>
+                <p>An automated inventory tracking system using webcam capture, Claude vision analysis, and PostgreSQL integration. 
+                The system captures daily images, uses AI to detect changes in pantry items, and maintains a real-time database of inventory with quantity tracking and change history. 
+                Built with Python, Flask, and PostgreSQL, featuring a web dashboard for monitoring stock levels, API cost tracking, and automated detection of added/removed items.</p>
             </div>
             <div className="project">
-                <a href="https://github.com/Faugnom1/Discord-Friend-Invite-Generator" target="_blank" rel="noreferrer"><img src={discord} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/Faugnom1/Discord-Friend-Invite-Generator" target="_blank" rel="noreferrer"><h2>Discord Friend Invite Generator</h2></a>
-                <p>This project is a Python-based tool, created with Electron, that restores a previously removed feature from Discord, allowing users to easily generate 
-                    personalized friend invite links. The script automates the creation of multiple Discord invite links, streamlining the process for users who need to invite
-                     many friends quickly. By leveraging Discord’s API, the tool securely and efficiently generates bulk invites, making it especially useful for community 
-                     managers and event organizers.</p>
+                <a href="https://github.com/michael-faugno-dev/e7SiftMatching" target="_blank" rel="noreferrer"><img src={siftMatching} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/michael-faugno-dev/e7SiftMatching" target="_blank" rel="noreferrer"><h2>SIFT Image Recognition Pipeline</h2></a>
+                <p>A computer vision pipeline implementing Scale-Invariant Feature Transform (SIFT) for automated image matching and recognition. 
+                Developed as the core matching engine for Epic Seven Armory, this system detects and matches game character portraits from screenshots with high accuracy. 
+                Uses OpenCV for feature extraction and matching, enabling recognition despite variations in scale, rotation, and lighting conditions.</p>
             </div>
             <div className="project">
                 <a href="https://www.youtube.com/@NewJerseyGSO" target="_blank" rel="noreferrer"><img src={NJGSO} className="zoom" alt="thumbnail" width="100%"/></a>

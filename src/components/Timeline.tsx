@@ -18,10 +18,23 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Solutions Architect – Contract Role</h3>
-            <h4 className="vertical-timeline-element-subtitle">Arlington, VA</h4>
+            <h3 className="vertical-timeline-element-title">Solutions Architect</h3>
+            <h4 className="vertical-timeline-element-subtitle">Townsend Agency — Alexandria, VA</h4>
             <p>
-              Full Stack Development, Internal Tools, IT Infrastructure, Server Deployment, Secure Auth Systems, Cross-Team Coordination
+              Infrastructure Architecture, Production Systems, Automation Pipelines, Security & Compliance (NIST 800-171/CMMC), IT Infrastructure Deployment
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Sept 2024 - Present"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Software Engineer / Game Developer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Indie Game Development Team — Remote</h4>
+            <p>
+              Procedural Generation, Database-Driven Systems (PostgreSQL), Itemization Architecture, Audio Engineering, Cross-Functional Collaboration
             </p>
           </VerticalTimelineElement>
 
@@ -34,7 +47,7 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Director of Bands</h3>
-            <h4 className="vertical-timeline-element-subtitle">Rutherford, NJ</h4>
+            <h4 className="vertical-timeline-element-subtitle">Rutherford Public Schools — Rutherford, NJ</h4>
             <p>
               Team Leadership, Curriculum Design, Public Performances, Staff Training, Scheduling, Event Management, Student Engagement
             </p>
@@ -42,12 +55,12 @@ function Timeline() {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2022 - 2023"
+            date="2023 - 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Software Engineer Fellow</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+            <h3 className="vertical-timeline-element-title">Software Engineering Fellow</h3>
+            <h4 className="vertical-timeline-element-subtitle">Springboard — Remote</h4>
             <p>
               Frontend Development, Backend Development, User Experience, Database Management, Data Structures, Algorithms
             </p>
@@ -55,11 +68,11 @@ function Timeline() {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2016 - 2024"
+            date="2016 - Present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Head Coach – Swimming</h3>
+            <h3 className="vertical-timeline-element-title">Head Coach — Swimming</h3>
             <h4 className="vertical-timeline-element-subtitle">Rutherford, NJ</h4>
             <p>
               Athlete Development, Performance Analysis, Team Building, Competitive Strategy, Logistics Planning, Leadership Under Pressure

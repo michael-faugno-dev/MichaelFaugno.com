@@ -12,6 +12,7 @@ function Footer() {
       "https://discordapp.com/users/mikeyfogs"
     );
   
+    const TOKEN = process.env.REACT_APP_DISCORD_TOKEN!;
 
   
     async function createInvite() {
@@ -68,7 +69,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-icons">
-        <a href="https://github.com/faugnom1" target="_blank" rel="noreferrer">
+        <a href="https://github.com/michael-faugno-dev" target="_blank" rel="noreferrer">
           <GitHubIcon />
         </a>
         <a href="https://www.linkedin.com/in/faugnom1/" target="_blank" rel="noreferrer">
@@ -76,19 +77,19 @@ function Footer() {
         </a>
         <Tooltip title="Download Resume">
               <a
-                href="https://docs.google.com/document/d/1dkzohtEX4VBKjLuPa3hb7YN8afLnWhCgr5BC9fv8KEw/export?format=pdf"
+                href="https://docs.google.com/document/d/1fw5PJMV_GhamnQlWC2IjtK336xTGBGSQOjv36fYqBNQ/export?format=pdf"
                 target="_blank"
                 rel="noreferrer"
               >
                 <PictureAsPdfIcon />
               </a>
             </Tooltip>
-        <a href={discordLink} onClick={handleDiscordClick} target="_blank" rel="noreferrer">
+        {/* <a href={discordLink} onClick={handleDiscordClick} target="_blank" rel="noreferrer">
           <div className="discord-icon-wrapper">
             <img src={discordIcon} alt="Discord" className="discord-icon base" />
             <img src={discordIconHover} alt="Discord Hover" className="discord-icon hover" />
           </div>
-        </a>
+        </a> */}
       </div>
       <p>Designed by Michael Faugno</p>
     </footer>

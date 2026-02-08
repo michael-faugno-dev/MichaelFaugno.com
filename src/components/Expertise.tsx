@@ -26,6 +26,21 @@ const labelsDev = [
   "Electron",
 ];
 
+const labelsGame = [
+  "Unity",
+  "C#",
+  "PostgreSQL",
+  "Procedural Generation",
+  "Database Design",
+  "Audio Engineering",
+  "Game Systems",
+  "Electron",
+  "OCR/Image Recognition",
+  "Cross-Platform Development",
+  "Team Collaboration",
+  "Version Control"
+];
+
 const labelsEdu = [
   "Leadership",
   "Public Speaking",
@@ -36,7 +51,7 @@ const labelsEdu = [
   "Ensemble Direction",
   "Classroom Technology",
   "Student Engagement",
-    "Curriculum Design",
+  "Curriculum Design",
   "Conflict Resolution",
   "Scheduling"
 ];
@@ -64,13 +79,13 @@ function Expertise() {
         <div className="skills-grid">
           <div className="skill">
             <FontAwesomeIcon icon={faReact} size="3x" />
-            <h3>Full Stack Software Development</h3>
+            <h3>Solutions Architecture & Software Engineering</h3>
             <p>
-            I build complete web applications that prioritize clarity, performance, and long-term maintainability. 
-            My work spans the full development cycle from designing frontend interfaces that support clean, intuitive user experiences, 
-            to implementing backend logic, API endpoints, and data models that scale with business needs.
-            I’ve worked on both client-facing platforms and internal tools, often bridging gaps between design, development, and deployment. 
-            Whether collaborating with a team or working independently, I focus on writing code that is readable, testable, and aligned with real-world user workflows.
+            I design and build production systems that organizations rely on to operate effectively. 
+            My work spans infrastructure architecture, full-stack application development, and automation that improves reliability, security, and operational efficiency.
+            I operate with broad technical ownership — from early architectural decisions through deployment — delivering scalable solutions in fast-moving environments.
+            My experience includes internal operational platforms, database-driven applications, workflow automation, and cross-platform software. 
+            I focus on building systems that are maintainable, secure, and aligned with real organizational needs.
             </p>
 
             <div className="flex-chips">
@@ -105,17 +120,33 @@ function Expertise() {
             <FontAwesomeIcon icon={faComputer} size="3x" />
             <h3>Systems & IT Optimization</h3>
                 <p>
-                I have experience configuring and maintaining secure Windows and Linux environments, setting up internal servers,
-                and deploying workstations for business operations.
-                My background includes system performance tuning, hardware integration, and end-user support 
-                with a focus on stability, efficiency, and meeting real-world organizational needs.
-                I’ve also provided hands-on IT support for both individual users and small teams, resolving technical issues quickly 
-                to minimize downtime and keep operations running smoothly.
+                Production IT infrastructure is critical to daily operations, and my work focuses on building environments organizations can depend on.
+                I design, deploy, and maintain servers, network architecture, workstation environments, and security policies.
+                My work includes system performance tuning, access controls, disaster recovery planning, and end-user support with a focus on operational reliability and business continuity.
+                I've configured Windows and Linux systems, deployed internal servers, and provided technical support to minimize downtime and maintain system availability.
                 </p>
 
             <div className="flex-chips">
               <span className="chip-title">Systems Skills:</span>
               {labelsSys.map((label, index) => (
+                <Chip key={index} className='chip' label={label} />
+              ))}
+            </div>
+          </div>
+
+          <div className="skill">
+            <FontAwesomeIcon icon={faReact} size="3x" />
+            <h3>Game Development & Technical Projects</h3>
+                <p>
+                As a core developer on an indie game team, I build gameplay systems, procedural generation frameworks, and database-driven architectures for interactive experiences.
+                I've designed itemization systems, skill trees, and progression mechanics while engineering integrated audio systems aligned with gameplay feedback.
+                I also compose and produce original music and sound effects for game projects, integrating audio directly into gameplay to enhance player experience.
+                I've shipped projects using Unity, PostgreSQL, Electron, and OCR/image-recognition systems — collaborating with designers, artists, and other engineers to deliver polished, performant software.
+                </p>
+
+            <div className="flex-chips">
+              <span className="chip-title">Game Dev Skills:</span>
+              {labelsGame.map((label, index) => (
                 <Chip key={index} className='chip' label={label} />
               ))}
             </div>

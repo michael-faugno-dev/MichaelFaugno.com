@@ -14,6 +14,8 @@ function Main() {
     "https://discordapp.com/users/mikeyfogs"
   );
 
+  const TOKEN = process.env.REACT_APP_DISCORD_TOKEN!;
+
 
 
   async function createInvite() {
@@ -68,13 +70,14 @@ function Main() {
   };
 
 const titles = [
-  "Full Stack Engineer",     
-  "Educator",                
-  "Solutions Architect",     
-  "Band Director",          
-  "Software Developer",      
-  "Trumpet Player",           
-  "Team Leader"               
+  "Solutions Architect",
+  "Software Engineer",
+  "Game Developer",
+  "Infrastructure Engineer",
+  "Band Director",
+  "Systems Builder",
+  "Trumpet Player",
+  "Technical Leader"
 ];
 
 
@@ -87,23 +90,23 @@ const titles = [
         </div>
         <div className="content">
           <div className="social_icons">
-            <a href="https://github.com/faugnom1" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+            <a href="https://github.com/michael-faugno-dev" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/faugnom1/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
               <Tooltip title="Download Resume">
               <a
-                href="https://docs.google.com/document/d/1dkzohtEX4VBKjLuPa3hb7YN8afLnWhCgr5BC9fv8KEw/export?format=pdf"
+                href="https://docs.google.com/document/d/1fw5PJMV_GhamnQlWC2IjtK336xTGBGSQOjv36fYqBNQ/export?format=pdf"
                 target="_blank"
                 rel="noreferrer"
               >
                 <PictureAsPdfIcon />
               </a>
             </Tooltip>
-            <a href={discordLink} target="_blank" rel="noopener noreferrer" onClick={handleDiscordClick}>
+            {/* <a href={discordLink} target="_blank" rel="noopener noreferrer" onClick={handleDiscordClick}>
               <div className="discord-icon-wrapper">
                 <img src={discordIcon} alt="Discord" className="discord-icon"/>
                 <img src={discordIconHover} alt="Discord" className="discord-icon hover"/>
               </div>
-            </a>
+            </a> */}
 
           </div>
           <h1>Michael Faugno</h1>
@@ -117,24 +120,23 @@ const titles = [
           </p>
 
           <div className="mobile_social_icons">
-          <a href="https://github.com/faugnom1" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+          <a href="https://github.com/michael-faugno-dev" target="_blank" rel="noreferrer"><GitHubIcon/></a>
           <a href="https://www.linkedin.com/in/faugnom1/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           <Tooltip title="Download Resume">
               <a
-                href="https://docs.google.com/document/d/1dkzohtEX4VBKjLuPa3hb7YN8afLnWhCgr5BC9fv8KEw/export?format=pdf"
+                href="https://docs.google.com/document/d/1fw5PJMV_GhamnQlWC2IjtK336xTGBGSQOjv36fYqBNQ/export?format=pdf"
                 target="_blank"
                 rel="noreferrer"
               >
                 <PictureAsPdfIcon />
               </a>
             </Tooltip>
-            <a href={discordLink} target="_blank" rel="noopener noreferrer" onClick={handleDiscordClick}>
+            {/* <a href={discordLink} target="_blank" rel="noopener noreferrer" onClick={handleDiscordClick}>
               <div className="discord-icon-wrapper">
                 <img src={discordIcon} alt="Discord" className="discord-icon"/>
                 <img src={discordIconHover} alt="Discord" className="discord-icon hover"/>
               </div>
-
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -42,10 +42,10 @@ const ContactForm: React.FC = () => {
     setSubmitMessage('');
 
     emailjs.send(
-      'service_xxzm0ag',  // Your EmailJS service ID
-      'template_b7v01r9', // Your EmailJS template ID
+      process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
       formData as unknown as Record<string, unknown>, // Cast formData properly
-      'tWz3fBY51rKWpefBf' // Your EmailJS public key
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);

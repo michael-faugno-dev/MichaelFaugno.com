@@ -63,10 +63,10 @@ const ContactForm: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="contact_wrapper" id="contact" style={{width: '82%', margin: '0 auto', padding: '20px'}}>
+      <div className="contact_wrapper" id="contact">
         <h2>Contact Me</h2>
-        <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
-          <div style={{display: 'flex', gap: '20px'}}>
+        <form onSubmit={handleSubmit} className="contact-form">
+          <div className="form-flex">
             <TextField
               label="Name"
               name="name"
@@ -116,18 +116,10 @@ const ContactForm: React.FC = () => {
               style: { color: '#000000', backgroundColor: '#ffffff' },
             }}
           />
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             disabled={isSubmitting}
-            style={{
-              padding: '10px 20px',
-              backgroundColor: '#007bff',
-              color: 'white',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              alignSelf: 'flex-start'
-            }}
+            className="contact-submit-btn"
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>

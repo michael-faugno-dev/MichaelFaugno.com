@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Routes, Route } from "react-router-dom";
 import {
   Main,
   Timeline,
@@ -8,6 +9,7 @@ import {
   Contact,
   Navigation,
   Footer,
+  NotFound,
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
@@ -30,14 +32,23 @@ function App() {
     return (
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
-        <FadeIn transitionDuration={700}>
-            <Main/>
-            <Expertise/>
-            <Project/>
-            <Timeline/>
-            <BrassLessons/>
-            <Contact/>
-        </FadeIn>
+        <Routes>
+            <Route path="/" element={
+                <FadeIn transitionDuration={700}>
+                    <Main/>
+                    <Expertise/>
+                    <Project/>
+                    <Timeline/>
+                    <Contact/>
+                </FadeIn>
+            }/>
+            <Route path="/lessons" element={
+                <FadeIn transitionDuration={700}>
+                    <BrassLessons/>
+                </FadeIn>
+            }/>
+            <Route path="*" element={<NotFound/>}/>
+        </Routes>
         <Footer />
     </div>
     );

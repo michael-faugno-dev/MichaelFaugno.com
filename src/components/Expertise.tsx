@@ -2,7 +2,7 @@ import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faPython } from '@fortawesome/free-brands-svg-icons';
-import { faSchool, faComputer } from '@fortawesome/free-solid-svg-icons'
+import { faSchool, faComputer, faGamepad } from '@fortawesome/free-solid-svg-icons'
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
@@ -135,7 +135,7 @@ function Expertise() {
           </div>
 
           <div className="skill">
-            <FontAwesomeIcon icon={faReact} size="3x" />
+            <FontAwesomeIcon icon={faGamepad} size="3x" />
             <h3>Game Development & Technical Projects</h3>
                 <p>
                 As a core developer on an indie game team, I build gameplay systems, procedural generation frameworks, and database-driven architectures for interactive experiences.

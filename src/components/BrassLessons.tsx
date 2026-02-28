@@ -6,6 +6,7 @@ import '../assets/styles/BrassLessons.scss';
 function BrassLessons() {
   return (
     <div className="brass-lessons-section" id="lessons">
+      <p className="section-label">Beyond the Code</p>
       <h1>Private Brass Lessons</h1>
       
       <div className="lessons-intro">

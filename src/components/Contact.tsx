@@ -47,13 +47,11 @@ const ContactForm: React.FC = () => {
       formData as unknown as Record<string, unknown>, // Cast formData properly
       process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
     )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+      .then(() => {
         setSubmitMessage('Message sent successfully!');
         setFormData({ name: '', email: '', message: '' });
       })
-      .catch((error) => {
-        console.error('FAILED...', error);
+      .catch(() => {
         setSubmitMessage('Failed to send message. Please try again.');
       })
       .finally(() => {
@@ -123,6 +121,7 @@ const ContactForm: React.FC = () => {
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
+          {submitMessage && <p className="submit-message">{submitMessage}</p>}
         </form>
       </div>
     </ThemeProvider>

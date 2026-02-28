@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMusic, faVideo, faMapMarkerAlt, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { faMusic, faMapMarkerAlt, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import '../assets/styles/BrassLessons.scss';
 
 function BrassLessons() {

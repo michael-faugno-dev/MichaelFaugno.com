@@ -9,7 +9,6 @@
 
 .brass-lessons-section {
   padding: 5% 10%;
-  color: white;
   text-align: left;
 
   h1 {
@@ -21,13 +20,11 @@
   h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: white;
   }
 
   h3 {
     font-size: 1.5em;
     margin: 15px 0 10px 0;
-    color: white;
   }
 
   p {
@@ -103,6 +100,24 @@
     margin-bottom: 0;
     padding-top: 25px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.light-mode {
+  .lessons-features .feature {
+    background: rgba(0, 0, 0, 0.04);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .lessons-approach {
+    background: rgba(80, 0, 202, 0.06);
+
+    .approach-cta {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
